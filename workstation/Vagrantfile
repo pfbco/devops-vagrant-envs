@@ -72,4 +72,6 @@ Vagrant.configure("2") do |config|
   # System core packages
   config.vm.provision "shell", path: "provisioning/system.sh"
   config.vm.provision "shell", path: "provisioning/zsh.sh"
+  config.vm.provision :reload
+  config.vm.provision "shell", path: "provisioning/develop.sh", privileged: false
 end

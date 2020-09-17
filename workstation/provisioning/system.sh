@@ -13,6 +13,6 @@ dnf update -y
 
 echo -e "\n> Install core packages required for tools"
 dnf install epel-release -y && rpm -q epel-release
-dnf install -y \ 
+dnf install -y \
     gcc make perl kernel-devel kernel-headers bzip2 dkms \
     nano zip wget git
