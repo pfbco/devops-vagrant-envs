@@ -15,3 +15,7 @@ source ~/.rvm/scripts/rvm
 rvm install 2.6.5
 ruby -v && gem -v
 
+# Java, gradle
+sudo dnf install -y java-1.8.0-openjdk java-1.8.0-devel
+wget https://services.gradle.org/distributions/gradle-6.3-bin.zip -P /tmp
+java -version
